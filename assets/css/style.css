@@ -1,0 +1,20 @@
+
+.login-form {
+    left: 70%; /* Ban đầu đặt form đăng nhập ở bên phải */
+    transform: translateX(0%); /* Vị trí hiển thị ban đầu */
+}
+
+.signup-form {
+    left: 100%; /* Ban đầu đặt form đăng ký hoàn toàn ở bên phải */
+    transform: translateX(0%);
+}
+
+/* Hiển thị form đăng nhập khi trang tải */
+body.show-login .login-form {
+    transform: translateX(-100%);
+}
+
+/* Hiển thị form đăng ký khi class 'show-signup' được thêm vào body */
+body.show-signup .signup-form {
+    transform: translateX(-100%);
+}
