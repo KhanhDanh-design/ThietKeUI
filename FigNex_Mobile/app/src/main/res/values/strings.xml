@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">FigNex_Mobile</string>
+    <string name="ng_k_">
+        Đăng ký
+    </string>
 </resources>
