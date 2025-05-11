@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Banner -->
+            <ImageView
+                android:id="@+id/imgBanner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pvap" />
+
+            <!-- Nút quay lại ở góc trên trái -->
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:layout_gravity="top|start"
+                android:background="@drawable/bg_round"
+                android:src="@drawable/ic_back" />
+
+            <!-- Nhóm nút điều khiển phía dưới bên trái -->
+            <!-- Nhóm nút điều khiển phía dưới bên trái -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical">
+
+                <!-- Nút phát + chữ -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/bg_round_play"
+                    android:gravity="center_vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnPlay"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/play_arrow_24px"
+                        app:tint="#000000"
+                        android:background="#EA6719"
+                        android:contentDescription="Phát" />
+
+                    <TextView
+                        android:id="@+id/tvPlay"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:text="Phát"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <!-- Nút yêu thích -->
+                <ImageButton
+                    android:id="@+id/btnFavorite"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/bg_round"
+                    android:src="@drawable/favorite_24px" />
+
+                <!-- Nút thêm -->
+                <ImageButton
+                    android:id="@+id/btnAdd"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_round"
+                    android:src="@drawable/baseline_add_24" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!-- Thông tin -->
+
+        <!-- Nhãn độ tuổi -->
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingStart="10dp"
+            android:text="2008   189 Tập"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="4dp">
+
+            <!-- Chữ P nằm trong hình tròn -->
+            <TextView
+                android:id="@+id/tvCircleP"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/bg_circle_orange"
+                android:text="P"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Dòng chữ mô tả -->
+            <TextView
+                android:id="@+id/tvAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phim phù hợp với mọi độ tuổi"
+                android:textColor="#CCCCCC"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <!-- Mô tả -->
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="@string/phineas_and_ferb_l_phim_ho_t_h_nh_h_i_h_c_v_hai_c_u_b_thi_n_t_i_lu_n_ngh_ra_nh_ng_ph_t_minh_k_qu_c_t_n_h_ng_m_a_h_trong_khi_ch_g_i_candace_lu_n_c_g_ng_m_t_m_con_th_m_v_t_perry_th_b_m_t_ch_n_u_v_i_ti_n_s_doofenshmirtz"
+            android:textColor="#CCCCCC"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Diễn viên -->
+        <TextView
+            android:id="@+id/tvCast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="Diễn viên:Vincent Martella,Thomas Sangster,Ashley Tisdale,Dee Bradley Baker,Dan Povenmire,Jeff Marsh"
+            android:textColor="#CCCCCC"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Danh sách tập -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <!-- Chữ "Tập" bên trái -->
+            <TextView
+                android:id="@+id/tvEpisodeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tập"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                android:textStyle="bold" />
+
+            <!-- View đẩy nội dung ra 2 phía -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- Chữ "Thời lượng 24 phút" bên phải -->
+            <TextView
+                android:id="@+id/tvEpisodeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thời lượng 24 phút"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Số thứ tự -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_marginStart="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginEnd="12dp"
+                android:textStyle="bold"/>
+
+            <!-- Hình ảnh -->
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pvap"
+                android:layout_marginEnd="12dp" />
+
+            <!-- Tiêu đề -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                android:text="Rollercoaster"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Số thứ tự -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:layout_marginStart="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginEnd="12dp"
+                android:textStyle="bold"/>
+
+            <!-- Hình ảnh -->
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pvap"
+                android:layout_marginEnd="12dp" />
+
+            <!-- Tiêu đề -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                android:text="Lawn Gnome Beach"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Số thứ tự -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:layout_marginStart="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginEnd="12dp"
+                android:textStyle="bold"/>
+
+            <!-- Hình ảnh -->
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pvap"
+                android:layout_marginEnd="12dp" />
+
+            <!-- Tiêu đề -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                android:text="FlopStars"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <!-- Số thứ tự -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:layout_marginStart="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginEnd="12dp"
+                android:textStyle="bold"/>
+
+            <!-- Hình ảnh -->
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pvap"
+                android:layout_marginEnd="12dp" />
+
+            <!-- Tiêu đề -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                android:text="Come Home Perry"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -10,11 +10,16 @@ import java.util.List;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
 
-    private List<Integer> movieImageList; // Danh sách ID của hình ảnh cục bộ trong drawable
+    private final List<Integer> movieImageList; // Danh sách ID của hình ảnh cục bộ trong drawable
+    private OnMovieClickListener listener;
 
-    // Constructor
-    public MovieAdapter(List<Integer> movieImageList) {
-        this.movieImageList = movieImageList;
+    public interface OnMovieClickListener {
+        void onMovieClick(int imageResId);
+    }
+
+    public MovieAdapter(List<Integer> imageList, OnMovieClickListener listener) {
+        this.movieImageList = imageList;
+        this.listener = listener;
     }
 
     @Override
@@ -25,17 +30,21 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
 
     @Override
     public void onBindViewHolder(MovieViewHolder holder, int position) {
-        // Lấy ID hình ảnh từ danh sách và sử dụng Glide để load ảnh
         int imageResId = movieImageList.get(position);
         Glide.with(holder.itemView.getContext())
                 .load(imageResId)
                 .placeholder(R.drawable.placeholder)// Load ảnh từ drawable
                 .into(holder.imageView);  // Set ảnh vào ImageView
+        holder.itemView.setOnClickListener(v -> {
+            if (listener != null) {
+                listener.onMovieClick(imageResId);
+            }
+        });
     }
 
     @Override
     public int getItemCount() {
-        return movieImageList.size();
+        return (movieImageList != null) ? movieImageList.size() : 0;
     }
 
     // ViewHolder để giữ các view cho mỗi item trong RecyclerView
