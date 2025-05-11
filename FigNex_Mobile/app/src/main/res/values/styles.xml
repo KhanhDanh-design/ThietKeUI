@@ -4,4 +4,8 @@
         <item name="android:textSize">40sp</item>
         <item name="android:textColor">#EF672D</item>
     </style>
+    <style name="PopupMenuStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">#121212</item> <!-- nền xám -->
+        <item name="android:textColor">#FF000000</item> <!-- chữ trắng -->
+    </style>
 </resources>
