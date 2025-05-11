@@ -35,13 +35,21 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_weight="1" />
+
     <ImageView
         android:id="@+id/search"
         android:layout_width="58dp"
         android:layout_height="55dp"
         android:layout_weight="0"
         app:srcCompat="@drawable/icon_search" />
-    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="58dp"
+        android:layout_height="55dp"
+        android:layout_weight="0"
+        app:srcCompat="@drawable/icon_menu" />
+</LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -88,7 +96,7 @@
     android:paddingLeft="10dp">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnlike"
         android:layout_width="190dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -99,7 +107,7 @@
         android:textColor="@color/white" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnsuggest"
         android:layout_width="181dp"
         android:layout_height="match_parent"
         android:layout_gravity="center"

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <TextView
+        android:paddingTop="10dp"
+        android:id="@+id/textViewLiked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="PHIM ĐÃ THÍCH"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image"
+                android:contentDescription="Kinh dị" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="181dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image" />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:paddingTop="10dp"
+        android:id="@+id/textViewSuggest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="PHIM ĐỀ XUẤT"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image"
+                android:contentDescription="Kinh dị" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="181dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image" />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image"
+                android:contentDescription="Kinh dị" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="181dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image" />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
